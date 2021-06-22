@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "708791677970",
+    "project_id": "vegefruiter",
+    "storage_bucket": "vegefruiter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708791677970:android:3b3146f86fa65a470814cb",
+        "android_client_info": {
+          "package_name": "com.vegefruiter.vegefruiter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708791677970-fsfcd7i3m48i71h3jmm9g8qr0762grj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vegefruiter.vegefruiter",
+            "certificate_hash": "4b1fcbcab661d5ae426080ec4579701265eb1f5e"
+          }
+        },
+        {
+          "client_id": "708791677970-tmfi66j3uprkdiqtjae2nmlvlkjsj3q7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAptAiR2e3AOybJcpROCQEZ8MX-SLfAOGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708791677970-tmfi66j3uprkdiqtjae2nmlvlkjsj3q7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
