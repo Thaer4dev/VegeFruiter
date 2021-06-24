@@ -99,7 +99,7 @@ class _ItemsScreen extends State<ItemsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.lime,
         leading:IconButton(
@@ -124,7 +124,7 @@ class _ItemsScreen extends State<ItemsScreen> {
             ],
           ),
         ],),
-       body: Container(color: Colors.grey[200],
+      body: Container(color: Colors.grey[200],
         child: Column(
           children: [
             Container(
@@ -138,103 +138,103 @@ class _ItemsScreen extends State<ItemsScreen> {
                   itemCount: 15),
             ),
             SizedBox(height: 20,),
-             Expanded(
-               child: ListView.separated(
-                    itemBuilder: (context, index){
-                      return GestureDetector(
-                        onTap: (){
-                          // showDialogFunc(context, imageList[index], nameList[index], country1List[index],perList[index],priceList[index],_minusCounter , _incrementCounter , _counter);
-                          showDialog(
-                            context: context,
-                            builder: (context)
-                            {
-                              return Center(
-                                child: Material(
-                                  type: MaterialType.transparency,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                      color: Colors.white,
-                                    ),
-                                    padding: EdgeInsets.all(10),
-                                    height: 370, width: MediaQuery.of(context).size.width * 0.7,
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          padding: EdgeInsets.zero,
-                                          alignment: Alignment.center,
-                                          height: 40,
-                                          width: double.infinity,
-                                          child:Text(nameList[index],style: TextStyle(color: Colors.lime,fontSize: 20.0,fontWeight:FontWeight.bold,)),),
-                                        Container(
-                                          height: 120,
-                                          width: double.infinity,
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                 child: Container(
-                                                  height: 120,
-                                                  // width: MediaQuery.of(context).size.width * 0.32,
-                                                  child: ClipRRect(
-                                                    borderRadius: BorderRadius.circular(5),
-                                                    child: Image.network(imageList[index], width: 120, height: 120,),),
-                                                ),
-                                              ),
-                                              Expanded(
-                                                 child: Container(
-                                                  height: 120,
-                                                  // width: MediaQuery.of(context).size.width * 0.32,
-                                                  child: Column(
-                                                    children: [
-                                                      SizedBox(height: 30,),
-                                                      Row(
-                                                        mainAxisAlignment: MainAxisAlignment.center,
-                                                        children: [
-                                                          Text('Price per ',style: TextStyle(color: Colors.grey,fontSize: 16.0,fontWeight:FontWeight.bold),),
-                                                          Text(perList[index],style: TextStyle(color: Colors.amber,fontSize: 16.0,fontWeight:FontWeight.bold),),],),
-                                                      Row(
-                                                        crossAxisAlignment: CrossAxisAlignment.baseline,
-                                                        textBaseline: TextBaseline.alphabetic,
-                                                        mainAxisAlignment: MainAxisAlignment.center,
-                                                        children: [
-                                                          Text(priceList[index],style: TextStyle(color: Colors.lime,fontSize: 27.0,fontWeight:FontWeight.bold),),
-                                                          SizedBox(width: 5,),
-                                                          Text('AED',style: TextStyle(color: Colors.grey,fontSize: 16.0,fontWeight:FontWeight.bold),),],),
-                                                    ],),
-                                                ),
-                                              ),
-                                            ],),),
-                                        Container(height: 50,
-                                          width: double.infinity,
-                                          child: Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            textBaseline: TextBaseline.alphabetic,
-                                            children: [
-                                              IconButton(
-                                                padding: EdgeInsets.zero,
-                                                iconSize: 50,
-                                                color: Colors.lime,
-                                                onPressed: _incrementCounter,
-                                                icon: Icon(Icons.add_circle_outlined),),
-                                              Text('$_counter',style: TextStyle(color: Colors.grey,fontSize: 40.0,fontWeight:FontWeight.bold,),),
-                                              IconButton(
-                                                padding: EdgeInsets.zero,
-                                                iconSize: 50,
-                                                color: Colors.lime,
-                                                onPressed: _minusCounter,
-                                                icon: Icon(Icons.remove_circle_outlined,),),
-                                            ],),),
-                                        Container(height: 50,)
-                                      ],),
+            Expanded(
+              child: ListView.separated(
+                  itemBuilder: (context, index){
+                    return GestureDetector(
+                      onTap: (){
+                        // showDialogFunc(context, imageList[index], nameList[index], country1List[index],perList[index],priceList[index],_minusCounter , _incrementCounter , _counter);
+                        showDialog(
+                          context: context,
+                          builder: (context)
+                          {
+                            return Center(
+                              child: Material(
+                                type: MaterialType.transparency,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.white,
                                   ),
+                                  padding: EdgeInsets.all(10),
+                                  height: 370, width: MediaQuery.of(context).size.width * 0.7,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.zero,
+                                        alignment: Alignment.center,
+                                        height: 40,
+                                        width: double.infinity,
+                                        child:Text(nameList[index],style: TextStyle(color: Colors.lime,fontSize: 20.0,fontWeight:FontWeight.bold,)),),
+                                      Container(
+                                        height: 120,
+                                        width: double.infinity,
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                height: 120,
+                                                // width: MediaQuery.of(context).size.width * 0.32,
+                                                child: ClipRRect(
+                                                  borderRadius: BorderRadius.circular(5),
+                                                  child: Image.network(imageList[index], width: 120, height: 120,),),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Container(
+                                                height: 120,
+                                                // width: MediaQuery.of(context).size.width * 0.32,
+                                                child: Column(
+                                                  children: [
+                                                    SizedBox(height: 30,),
+                                                    Row(
+                                                      mainAxisAlignment: MainAxisAlignment.center,
+                                                      children: [
+                                                        Text('Price per ',style: TextStyle(color: Colors.grey,fontSize: 16.0,fontWeight:FontWeight.bold),),
+                                                        Text(perList[index],style: TextStyle(color: Colors.amber,fontSize: 16.0,fontWeight:FontWeight.bold),),],),
+                                                    Row(
+                                                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                                                      textBaseline: TextBaseline.alphabetic,
+                                                      mainAxisAlignment: MainAxisAlignment.center,
+                                                      children: [
+                                                        Text(priceList[index],style: TextStyle(color: Colors.lime,fontSize: 27.0,fontWeight:FontWeight.bold),),
+                                                        SizedBox(width: 5,),
+                                                        Text('AED',style: TextStyle(color: Colors.grey,fontSize: 16.0,fontWeight:FontWeight.bold),),],),
+                                                  ],),
+                                              ),
+                                            ),
+                                          ],),),
+                                      Container(height: 50,
+                                        width: double.infinity,
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          textBaseline: TextBaseline.alphabetic,
+                                          children: [
+                                            IconButton(
+                                              padding: EdgeInsets.zero,
+                                              iconSize: 50,
+                                              color: Colors.lime,
+                                              onPressed: _incrementCounter,
+                                              icon: Icon(Icons.add_circle_outlined),),
+                                            Text('$_counter',style: TextStyle(color: Colors.grey,fontSize: 40.0,fontWeight:FontWeight.bold,),),
+                                            IconButton(
+                                              padding: EdgeInsets.zero,
+                                              iconSize: 50,
+                                              color: Colors.lime,
+                                              onPressed: _minusCounter,
+                                              icon: Icon(Icons.remove_circle_outlined,),),
+                                          ],),),
+                                      Container(height: 50,)
+                                    ],),
                                 ),
-                              );
-                            },
-                          );
-                        },
-                        child: Container(
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
                         height: 100,
                         margin:EdgeInsets.only(left: 7,right: 7) ,
                         padding:EdgeInsets.zero,
@@ -318,13 +318,13 @@ class _ItemsScreen extends State<ItemsScreen> {
                               ),
                             ),
                           ],),),
-                      );
-                    },
-                    separatorBuilder: (context, index)=> SizedBox(height: 10,),
-                    itemCount: nameList.length),
-             ),
+                    );
+                  },
+                  separatorBuilder: (context, index)=> SizedBox(height: 10,),
+                  itemCount: nameList.length),
+            ),
           ],),
-          ),);
+      ),);
 
   }
 }
